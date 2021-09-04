@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'control/products_notifier.dart';
 import 'routes.dart';
-import 'screen/home/home.dart';
 import 'screen/sign_in/sign_in_screen.dart';
 import 'theme.dart';
 
@@ -28,8 +27,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'E-commerce Task',
       theme: theme(),
-      home: HomeScreen(),
-      initialRoute: HomeScreen.routeName,
+      home: SignInScreen(),
+      initialRoute: SignInScreen.routeName,
       routes: routes,
     );
   }
